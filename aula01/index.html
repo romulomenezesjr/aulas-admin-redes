@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+				<section data-background="#000">
+					<h2>Administração de Redes </h2>					
+					<h4> Apresentação da disciplina e motivação </h4>					
+					<p>
+						<small> Prof.  Rômulo Menezes Jr. / <a href="https://github.com/romulomenezesjr">romulomenezesjr</a></small>
+					</p>
+				</section>
+
+				<section data-background="img/lixo.gif">
+					<h2>Ementa...</h2>
+				</section>
+
+				<section>
+					<h2> Conteúdo </h2>
+					<p>
+						<ul>
+							<li> 
+							Administração de Sistemas e Redes
+							</li>
+							
+							<li> 
+							Configuração e Endereçamento de Redes						
+							</li>
+
+							<li> Monitoramento de Rede</li>
+
+							<li> Roteamento </li>
+
+							<li> Proxy	</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2> Material de Referência - RNP</h2>
+						<ul>
+							<li>
+							<a href="http://pt.scribd.com/doc/128908589/Introducao-ao-Linux">
+							Introdução ao Linux
+							</a>
+							</li>
+							
+							<li>
+								<a href="https://pt.scribd.com/doc/128912228/Administracao-de-Sistemas-Linux">Administração de Sistemas Linux</a>
+							</li>
+
+							<li>
+							<a href="https://pt.scribd.com/doc/83505510/Arquitetura-e-protocolos-de-rede-TCP-IP">
+							Arquitetura e protocolos de rede TCP-IP
+							</a>					
+							</li>
+
+							<li>
+							<a href="https://pt.scribd.com/doc/136693046/Administracao-de-Sistemas-Linux-Redes-e-Seguranca">
+							Administração de Sistemas Linux: Redes e Segurança
+							</a>					
+							</li>
+							
+							<li>
+							<a href="http://pt.scribd.com/doc/127594341/Protocolos-de-Roteamento-IP">
+							Protocolos de Roteamento IP
+							</li>
+							</a>
+						</ul>	
+				</section>
+
+				<section>
+					<h2> Material de Referência - Livros</h2>
+					<ul>
+						<li>Kurose - Redes de computadores e a internet: uma abordagem top-down</li>
+						<li>Tanenbaum - Redes de computadores</li>
+						<li>Burgess - Principles of network and system administration</li>
+					</ul>					
+				</section>
+
+				
+				<section>
+				<h2>Metodologia de Ensino e Planejamento</h2>
+				<p>20% de aulas teóricas</p>
+				<p>80% de aulas práticas - Laboratório de Informática</p>
+
+				<a href="https://docs.google.com/spreadsheets/d/1os0Bx3y56QK8q3MawfM8DAsAYG3FddTDMcbl9L0zn9c/edit?usp=sharing" target="_blank">Cronograma de aulas</a>
+				</section>
+
+				<section>
+					<h2>Avaliação</h2>
+					<ul>
+						<li>2 avaliações por bimestre </li>
+						<li>1 Recuperação bimestral</li>
+						<li>1 Recuperação final</li>
+					</ul>
+				</section>
+
+				<section data-background="#000">
+					<h2>O administrador de redes</h2>
+				</section>
+
+				<section>
+					<h4>Trabalha com tecnologia e com <em> usuários </em></h4>
+					<ul> <li> Não deve haver benefícios para usuários específicos, priorisar a comunidade é o objetivo principal</li></ul>
+					<br><br>
+					<h4>Lida com grande quantidade de recursos</h4>
+					<ul><li> Hardware, software, suporte ao usuário, diagnóstico, manutenção e prevenção.</li></ul> 
+				</section>
+
+				<section>					
+					
+					<h4>Componentes de uma rede</h4>
+					<ul>
+						<li>Estações de trabalho de usuário (computadores, notebooks, dispositivos móveis, etc.);</li>
+						<li>Meios de comunicação;</li>
+						<li>Equipamentos de rede que compõem a infraestrutura. </li>
+					</ul>
+				
+				</section>
+
+				<section>
+					<h3>Admin. de Redes <em> vs </em> Admin. de Sistemas</h3>
+					<p>Não são totalmente dissociados, mas existe uma separação entre as funções que cada um executa.</p>
+					
+				</section>
+
+				<section>
+					<h3>Admin. de Redes <em>vs</em> Admin. de Sistemas</h3>
+					<p>No mundo dos PC, o administrador de redes lida com tudo o que estiver ligado à rede, incluindo os computadores, mas numa definição mais precisa...</p>
+					<em>Um administrador de redes lida com o gerenciamento de dispositivos de infraestrutura de rede.</em>
+				</section>
+
+				<section>
+					<h3>Perfil do Administrador</h3>
+					<ul>
+					<li>O Administrador necessita paciencia, conhecimento e experiência para lidar com os problemas contidianos.</li>
+					<li>Soluções para problemas parecidos nem sempre se aplicam para todos os casos.</li>
+					<li>No passado o administração de sistemas era feita por profissionais não especializados que tinham interesse por tecnologia <em>(curiosos)</em>.</li>
+					</ul>
+
+				</section>
+				
+				<section >
+					<h3>O trabalho do administrador de sistemas...</h3>
+					<ul>
+						<li> <em>Plenejar </em> uma rede eficiente para usuários trabalharem; </li>			
+						<li> <em>Implementar</em> serviços e dispositivos;</li>
+						<li> <em>Monitorar</em> o funcionamento; </li>
+						<li> <em>Detectar</em> e corrigir problemas; </li>
+						<li> <em>Proteger</em> de ataques externos e internos;</li>
+						<li> <em>Escalar</em> de acordo com a necessidade;</li>
+						<li> <em>Auditar</em>.</li>
+					</ul>
+				</section>
+
+				<section>
+				<h3>Bugs...</h3>
+				<p> O administrador deve atualizar os sistemas para as versões mais estáveis. </p>
+			</section>
+
+			<section>
+				<h3>Referências</h3>
+
+			</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
